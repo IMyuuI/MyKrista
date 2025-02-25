@@ -1,17 +1,17 @@
 package ru.krista.example;
 
-/**
- * Hello world!
- */
+import java.util.Scanner;
+
 public final class App {
     private App() {
     }
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Введите первое число, операцию, второе число через пробел: ");
+        Scanner in = new Scanner(System.in);
+        String str = in.nextLine();
+        Calculator Calc1 = new Calculator(str);
+        Calc1.Calc();
+        
     }
 }
